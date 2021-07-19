@@ -43,7 +43,7 @@ from torch.utils import tensorboard
 from evaluateUDA import evaluate
 import imageio
 import time
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+
 start = timeit.default_timer()
 
 start_writeable = datetime.datetime.now().strftime('%m-%d_%H-%M')
@@ -363,7 +363,7 @@ def main():
 
             loss_feature = mmd_rbf(f_source,f_target)
             loss_global = mmd_rbf(gs,gt)
-            loss_mmd = 0.005*loss_global + 0.005*loss_feature
+            loss_mmd = 0.0001*loss_global + 0.0001*loss_feature
 
             target_mix_lbl = torch.cat((target_mix_lbl0, target_mix_lbl1)).long()
             source_mix_lbl = torch.cat((source_mix_lbl0, source_mix_lbl1)).long()
@@ -426,7 +426,7 @@ def main():
             ema_model = update_ema_variables(ema_model = ema_model, model = model, alpha_teacher=alpha_teacher, iteration=i_iter, gpus=gpus)
         if i_iter % 100 == 0 :
 
-            print('iter = {0:6d}/{1:6d}, loss_l = {2:.3f}, loss_u = {3:.3f}, loss_2 = {4:.3f}, lambda = {5:.3f}, loss_mmd = {6:.3f}'.format(i_iter, num_iterations, loss_l_value, loss_u_value, loss_2_value,lam,loss_mmd_value))
+            print('iter = {0:6d}/{1:6d}, loss_l = {2:.4f}, loss_u = {3:.4f}, loss_2 = {4:.4f}, lambda = {5:.4f}, loss_mmd = {6:.4f}'.format(i_iter, num_iterations, loss_l_value, loss_u_value, loss_2_value,lam,loss_mmd_value))
 
         if i_iter % val_per_iter == 0 and i_iter != 0:
             model.eval()
