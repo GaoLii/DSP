@@ -12,6 +12,7 @@ Official implementation of "DSP: Dual Soft-Paste for Unsupervised Domain Adaptiv
 1. Creat a new conda environment
 ```
 conda create -n dsp_env python=3.7
+conda install pytorch=1.7 torchvision torchaudio cudatoolkit -c pytorch
 conda activate dsp_env
 ```
 2. Download the code from github and change the directory
@@ -20,12 +21,7 @@ conda activate dsp_env
 git clone https://github.com/GaoLii/DSP/
 cd DSP
 ```
-3. Install requirements packages
-
-```
-pip install -r requirements.txt
-```
-4. Prepare dataset
+3. Prepare dataset
 
 Download Cityscapes, GTA5 and SYNTHIA dataset, then organize the folder as follows:
 
