@@ -17,8 +17,8 @@ conda activate dsp_env
 2. Download the code from github and change the directory
 
 ```
-git clone http://
-cd name
+git clone https://github.com/GaoLii/DSP/
+cd 
 ```
 3. Install requirements packages
 
@@ -67,9 +67,9 @@ python evaluateUDA.py --model-path checkpoint.pth
 
 
 # Pretrained models
-- [Pretrained model for GTA5->Cityscapes](https://note.youdao.com/): Peaked at 55.0 mIoU.
+- [Pretrained model for GTA5->Cityscapes](链接: https://pan.baidu.com/s/10adjjSXarJOvat-ibzfoLg  密码: wv28): Peaked at 55.0 mIoU.
 
-- [Pretrained model for SYN->Cityscapes](https://note.youdao.com/): Peaked at 63.8 mIoU.
+- [Pretrained model for SYN->Cityscapes](链接: https://pan.baidu.com/s/1cL7rYximzpUmYt-8OcpF4Q  密码: mw4e): Peaked at 63.8 mIoU.
 
 This model should be unzipped in the '../saved' folder.
 
