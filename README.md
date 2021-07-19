@@ -1,5 +1,5 @@
 # DSP
-Official implementation of "DSP: Dual Soft-Paste for Unsupervised Domain Adaptive Semantic Segmentation"
+Official implementation of "DSP: Dual Soft-Paste for Unsupervised Domain Adaptive Semantic Segmentation". Accepted by ACM Multimedia 2021.
 
 > Authors: Li Gao, Jing Zhang, Lefei Zhang, Dacheng Tao.
 
@@ -14,6 +14,7 @@ Official implementation of "DSP: Dual Soft-Paste for Unsupervised Domain Adaptiv
 conda create -n dsp_env python=3.7
 conda install pytorch=1.7 torchvision torchaudio cudatoolkit -c pytorch
 conda activate dsp_env
+pip install -r requirements.txt
 ```
 2. Download the code from github and change the directory
 
