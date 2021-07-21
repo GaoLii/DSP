@@ -77,6 +77,16 @@ The code is heavily borrowed from [DACS](https://github.com/vikolss/DACS).
 If you use this code in your research please consider citing
 
 ```
-@article    
+@article{Gao_2021,
+   title={DSP: Dual Soft-Paste for Unsupervised Domain Adaptive Semantic Segmentation},
+   url={https://arxiv.org/abs/2107.09600},
+   DOI={10.1145/3474085.3475186},
+   journal={Proceedings of the 29th ACM International Conference on Multimedia},
+   publisher={ACM},
+   author={Gao, Li and Zhang, Jing and Zhang, Lefei and Tao, Dacheng},
+   year={2021},
+   month={Oct}
+}
+  
 ```
 
