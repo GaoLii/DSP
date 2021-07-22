@@ -66,7 +66,6 @@ python evaluateUDA.py --model-path checkpoint.pth
 # Pretrained models
 - [Pretrained model for GTA5->Cityscapes](Link: https://pan.baidu.com/s/10adjjSXarJOvat-ibzfoLg  Code: wv28): Peaked at 55.0 mIoU.
 
-- [Pretrained model for SYN->Cityscapes]Link: https://pan.baidu.com/s/1cL7rYximzpUmYt-8OcpF4Q  Code: mw4e): Peaked at 63.8 mIoU.
 
 This model should be unzipped in the '../saved' folder.
 
