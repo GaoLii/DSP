@@ -12,8 +12,8 @@ Official implementation of "DSP: Dual Soft-Paste for Unsupervised Domain Adaptiv
 1. Creat a new conda environment
 ```
 conda create -n dsp_env python=3.7
-conda install pytorch=1.7 torchvision torchaudio cudatoolkit -c pytorch
 conda activate dsp_env
+conda install pytorch=1.7 torchvision torchaudio cudatoolkit -c pytorch
 pip install -r requirements.txt
 ```
 2. Download the code from github and change the directory
