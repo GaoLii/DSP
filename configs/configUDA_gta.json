@@ -16,7 +16,7 @@
     "weight_decay": 5e-4,
     "use_sync_batchnorm": true,
 
-    "lam": 0.8,
+    "lam": 0.9,
     "data": {
       "split_id_list": 0,
       "labeled_samples": 0,
@@ -43,7 +43,7 @@
   "utils": {
     "save_checkpoint_every": 5000,
     "checkpoint_dir": "./saved",
-    "val_per_iter": 500,
+    "val_per_iter": 5000,
     "tensorboard": false,
     "log_per_iter": 100,
     "save_best_model": true
