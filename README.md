@@ -44,17 +44,12 @@ Download Cityscapes, GTA5 and SYNTHIA dataset, then organize the folder as follo
 
 # Training and Evaluation example
 
-> Training and evaluation are on a single Tesla V100 GPU with 16G memory.
+> Training and evaluation are on a single Tesla V100 GPU.
 
 ### Train with unsupervised domain adaptation 
 
-#### GTA5->CityScapes 
 ```
-python train_DSP.py --config ./configs/configUDA_gta.json --name UDA_gta
-```
-#### SYNTHIA->CityScapes
-```
-python train_DSP.py --config ./configs/configUDA_syn.json --name UDA_syn
+python train.py
 ```
 ### Evaluation 
 
